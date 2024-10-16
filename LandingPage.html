@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="C:/Users/USER/Documents/Tugas/Company Profile Github/landingpage.css">
+</head>
+<body>
+    <body>
+        <header class="main-header">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>Bisa Cerdas Kursus Online</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="LandingPage.php">Home</a></li>
+                    <?php if (isset($_SESSION['user_id'])): ?>
+                        <li><a href="src/views/user_list.php">Users List</a></li>
+                        <li><a href="src/controller/logout.php">Logout</a></li>
+                    <?php else: ?>
+                        <li><a href="public/login.php">Login</a></li>
+                        <li><a href="public/index.php">Register</a></li>
+                    <?php endif; ?>
+                </ul>
+            </nav>
+            <div class="hero-section">
+                <h1>Selamat Datang di Bisa Cerdas</h1>
+                <p>Ayo Terhubung Dengan Seluruh Dunia Dengan Belajar Bahasa Inggris!</p><br>
+                <a href="public/index.php" class="btn-primary">Get Started</a>
+            </div>
+        </header>
+    
+        <section class="features-section">
+            <h2>Features</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <img src="https://via.placeholder.com/100" alt="Icon Register">
+                    <h3>Register Users</h3>
+                    <p>Quick and easy user registration system to manage your users efficiently.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="https://via.placeholder.com/100" alt="Icon View">
+                    <h3>View Users</h3>
+                    <p>Easily view all registered users in a simple and organized list.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="https://via.placeholder.com/100" alt="Icon Manage">
+                    <h3>Edit & Delete Users</h3>
+                    <p>Manage users with the ability to update or delete user data when necessary.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="recommended-section">
+            <h2>Sangat Direkomendasikan Untuk:</h2>
+            <ul>
+                <li><img src="C:/Users/USER/Documents/Tugas/Company Profile Github/gambar-ilustrasi-siswa.png" alt="Icon Pelajar">Pelajar yang ingin meningkatkan kemampuan bahasa Inggris</li>
+                <li><img src="C:/Users/USER/Documents/Tugas/Company Profile Github/profesional.png" alt="Icon Profesional">Profesional yang membutuhkan kemampuan bahasa Inggris untuk karir</li>
+                <li><img src="C:/Users/USER/Documents/Tugas/Company Profile Github/orang tua.jpg" alt="Icon Orang Tua">Orang tua yang ingin memberikan bekal bahasa Inggris untuk anak-anak mereka</li>
+                <li><img src="C:/Users/USER/Documents/Tugas/Company Profile Github/pengusaha.jpg
+                " alt="Icon Pengusaha">Pengusaha yang ingin memperluas bisnis ke pasar internasional</li>
+            </ul>
+        </section>
+    
+        <section class="reviews-section">
+            <h2>Ulasan</h2>
+            <div class="review">
+                <img src="https://via.placeholder.com/60" alt="Reviewer 1">
+                <p>"Platform ini benar-benar membantu saya meningkatkan kemampuan bahasa Inggris dengan cepat!"</p>
+                <span>- Anita, Mahasiswa</span>
+            </div>
+            <div class="review">
+                <img src="https://via.placeholder.com/60" alt="Reviewer 2">
+                <p>"Sangat mudah digunakan, dan fitur manajemen pengguna sangat berguna untuk tim saya."</p>
+                <span>- Budi, Manajer Proyek</span>
+            </div>
+            <div class="review">
+                <img src="https://via.placeholder.com/60" alt="Reviewer 3">
+                <p>"Program ini membuat belajar bahasa Inggris menjadi menyenangkan dan efektif!"</p>
+                <span>- Carli, Pengusaha</span>
+            </div>
+        </section>
+    
+        <section class="benefits-section">
+            <h2>Keuntungan Menggunakan Bisa Cerdas</h2>
+            <ul>
+                <li><img src="https://via.placeholder.com/40" alt="Icon Akses 24/7"><strong>Akses 24/7:</strong> Belajar kapan saja dan di mana saja</li>
+                <li><img src="https://via.placeholder.com/40" alt="Icon Konten Berkualitas"><strong>Konten Berkualitas:</strong> Materi yang disusun oleh para ahli</li>
+                <li><img src="https://via.placeholder.com/40" alt="Icon Harga Terjangkau"><strong>Harga Terjangkau:</strong> Dapatkan pembelajaran dengan harga kompetitif</li>
+                <li><img src="https://via.placeholder.com/40" alt="Icon Dukungan Pelanggan"><strong>Dukungan Pelanggan:</strong> Tim kami siap membantu Anda kapan saja</li>
+            </ul>
+        </section>
+    
+        <footer class="main-footer">
+            <p>&copy; 2024 Bisa Cerdas. All rights reserved.</p>
+        </footer>
+</body>
+</html>
+
+

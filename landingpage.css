@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.main-header {
+    height: 100vh;
+    background: url('C:/Users/USER/Documents/Tugas/Company Profile Github/hero-bg.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.hero-section {
+    text-align: center;
+    color: white;
+    margin-top: -50px;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+}
+
+.hero-section p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.btn-primary {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.features-section,
+.recommended-section,
+.reviews-section,
+.benefits-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.features-section h2,
+.recommended-section h2,
+.reviews-section h2,
+.benefits-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.feature-item img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Ikon di section "Sangat Direkomendasikan Untuk" dan "Keuntungan" */
+.recommended-section ul,
+.benefits-section ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.recommended-section ul li,
+.benefits-section ul li {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.recommended-section ul li img,
+.benefits-section ul li img {
+    width: 40px;
+    margin-right: 15px;
+}
+
+.reviews-section .review {
+    margin: 0 auto 40px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.reviews-section .review img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.reviews-section .review p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.reviews-section .review span {
+    font-style: italic;
+    color: #555;
+}
+
+.main-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
