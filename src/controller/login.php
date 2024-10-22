@@ -18,7 +18,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Jika password benar, buat session untuk user
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['username'] = $user['username'];
-            header('Location: ../../src/views/user_list.php'); // Redirect ke halaman user list
+
+            // Redirect ke halaman dashboard
+            header('Location: /dashboard.html'); 
             exit();
         } else {
             echo "Password salah.";
