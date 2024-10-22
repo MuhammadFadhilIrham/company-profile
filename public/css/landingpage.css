@@ -11,7 +11,7 @@ body {
 
 .main-header {
     height: 100vh;
-    background: url('hero-bg.png') no-repeat center center/cover;
+    background: url('../img/hero-bg.png') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -163,6 +163,12 @@ body {
     height: 60px;
     border-radius: 50%;
     margin-right: 20px;
+}
+
+.rating {
+    font-size: 24px;
+    color: gold;
+    margin-bottom: 10px;
 }
 
 .reviews-section .review p {
